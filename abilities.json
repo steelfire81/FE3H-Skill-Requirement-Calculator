@@ -1,35 +1,35 @@
 [
     {
         "name": "Sword Prowess Lv 1",
-        "iconFilename": "swordProwess1",
+        "iconFilename": "swordprowess1",
         "skillRequirement": {
             "sword": "e+"
         }
     },
     {
         "name": "Sword Prowess Lv 2",
-        "iconFilename": "swordProwess2",
+        "iconFilename": "swordprowess2",
         "skillRequirement": {
             "sword": "d+"
         }
     },
     {
         "name": "Sword Prowess Lv 3",
-        "iconFilename": "swordProwess3",
+        "iconFilename": "swordprowess3",
         "skillRequirement": {
             "sword": "c+"
         }
     },
     {
         "name": "Sword Prowess Lv 4",
-        "iconFilename": "swordProwess4",
+        "iconFilename": "swordprowess4",
         "skillRequirement": {
             "sword": "b+"
         }
     },
     {
         "name": "Sword Prowess Lv 5",
-        "iconFilename": "swordProwess5",
+        "iconFilename": "swordprowess5",
         "skillRequirement": {
             "sword": "a+"
         }
@@ -39,35 +39,35 @@
 
     {
         "name": "Lance Prowess Lv 1",
-        "iconFilename": "lanceProwess1",
+        "iconFilename": "lanceprowess1",
         "skillRequirement": {
             "lance": "e+"
         }
     },
     {
         "name": "Lance Prowess Lv 2",
-        "iconFilename": "lanceProwess2",
+        "iconFilename": "lanceprowess2",
         "skillRequirement": {
             "lance": "d+"
         }
     },
     {
         "name": "Lance Prowess Lv 3",
-        "iconFilename": "lanceProwess3",
+        "iconFilename": "lanceprowess3",
         "skillRequirement": {
             "lance": "c+"
         }
     },
     {
         "name": "Lance Prowess Lv 4",
-        "iconFilename": "lanceProwess4",
+        "iconFilename": "lanceprowess4",
         "skillRequirement": {
             "lance": "b+"
         }
     },
     {
         "name": "Lance Prowess Lv 5",
-        "iconFilename": "lanceProwess5",
+        "iconFilename": "lanceprowess5",
         "skillRequirement": {
             "lance": "a+"
         }
@@ -77,35 +77,35 @@
 
     {
         "name": "Axe Prowess Lv 1",
-        "iconFilename": "axeProwess1",
+        "iconFilename": "axeprowess1",
         "skillRequirement": {
             "axe": "e+"
         }
     },
     {
         "name": "Axe Prowess Lv 2",
-        "iconFilename": "axeProwess2",
+        "iconFilename": "axeprowess2",
         "skillRequirement": {
             "axe": "d+"
         }
     },
     {
         "name": "Axe Prowess Lv 3",
-        "iconFilename": "axeProwess3",
+        "iconFilename": "axeprowess3",
         "skillRequirement": {
             "axe": "c+"
         }
     },
     {
         "name": "Axe Prowess Lv 4",
-        "iconFilename": "axeProwess4",
+        "iconFilename": "axeprowess4",
         "skillRequirement": {
             "axe": "b+"
         }
     },
     {
         "name": "Axe Prowess Lv 5",
-        "iconFilename": "axeProwess5",
+        "iconFilename": "axeprowess5",
         "skillRequirement": {
             "axe": "a+"
         }
@@ -115,35 +115,35 @@
 
     {
         "name": "Bow Prowess Lv 1",
-        "iconFilename": "bowProwess1",
+        "iconFilename": "bowprowess1",
         "skillRequirement": {
             "bow": "e+"
         }
     },
     {
         "name": "Bow Prowess Lv 2",
-        "iconFilename": "bowProwess2",
+        "iconFilename": "bowprowess2",
         "skillRequirement": {
             "bow": "d+"
         }
     },
     {
         "name": "Bow Prowess Lv 3",
-        "iconFilename": "bowProwess3",
+        "iconFilename": "bowprowess3",
         "skillRequirement": {
             "bow": "c+"
         }
     },
     {
         "name": "Bow Prowess Lv 4",
-        "iconFilename": "bowProwess4",
+        "iconFilename": "bowprowess4",
         "skillRequirement": {
             "bow": "b+"
         }
     },
     {
         "name": "Bow Prowess Lv 5",
-        "iconFilename": "bowProwess5",
+        "iconFilename": "bowprowess5",
         "skillRequirement": {
             "bow": "a+"
         }
@@ -153,35 +153,35 @@
 
     {
         "name": "Brawling Prowess Lv 1",
-        "iconFilename": "brawlProwess1",
+        "iconFilename": "brawlprowess1",
         "skillRequirement": {
             "brawling": "e+"
         }
     },
     {
         "name": "Brawling Prowess Lv 2",
-        "iconFilename": "brawlProwess2",
+        "iconFilename": "brawlprowess2",
         "skillRequirement": {
             "brawling": "d+"
         }
     },
     {
         "name": "Brawling Prowess Lv 3",
-        "iconFilename": "brawlProwess3",
+        "iconFilename": "brawlprowess3",
         "skillRequirement": {
             "brawling": "c+"
         }
     },
     {
         "name": "Brawling Prowess Lv 4",
-        "iconFilename": "brawlProwess4",
+        "iconFilename": "brawlprowess4",
         "skillRequirement": {
             "brawling": "b+"
         }
     },
     {
         "name": "Brawling Prowess Lv 5",
-        "iconFilename": "brawlProwess5",
+        "iconFilename": "brawlprowess5",
         "skillRequirement": {
             "brawling": "a+"
         }
@@ -335,7 +335,7 @@
     },
     {
         "name": "Black Tomefaire",
-        "iconFilename": "blackTomefaire",
+        "iconFilename": "blacktomefaire",
         "skillRequirement": {
             "reason": "s+"
         },
@@ -343,14 +343,14 @@
     },
     {
         "name": "White Tomefaire",
-        "iconFilename": "whiteTomefaire",
+        "iconFilename": "whitetomefaire",
         "skillRequirement": {
             "faith": "s+"
         }
     },
     {
         "name": "Dark Tomefaire",
-        "iconFilename": "darkTomefaire",
+        "iconFilename": "darktomefaire",
         "skillRequirement": {
             "reason": "s+"
         },
@@ -361,72 +361,72 @@
 
     {
         "name": "Sword Crit +10",
-        "iconFilename": "swordCrit",
+        "iconFilename": "swordcrit",
         "skillRequirement": {
             "sword": "s"
         }
     },
     {
         "name": "Lance Crit +10",
-        "iconFilename": "lanceCrit",
+        "iconFilename": "lancecrit",
         "skillRequirement": {
             "lance": "s"
         }
     },
     {
         "name": "Axe Crit +10",
-        "iconFilename": "axeCrit",
+        "iconFilename": "axecrit",
         "skillRequirement": {
             "axe": "s"
         }
     },
     {
         "name": "Bow Crit +10",
-        "iconFilename": "bowCrit",
+        "iconFilename": "bowcrit",
         "skillRequirement": {
             "bow": "s"
         }
     },
     {
         "name": "Brawl Crit +10",
-        "iconFilename": "brawlCrit",
+        "iconFilename": "brawlcrit",
         "skillRequirement": {
             "brawling": "s"
         }
     },
     {
         "name": "Black Magic Crit +10",
-        "iconFilename": "blackMagicCrit"
+        "iconFilename": "blackmagiccrit"
     },
     {
         "name": "White Magic Crit +10",
-        "iconFilename": "whiteMagicCrit"
+        "iconFilename": "whitemagiccrit"
     },
     {
         "name": "Dark Magic Crit +10",
-        "iconFilename": "darkMagicCrit"
+        "iconFilename": "darkmagiccrit"
     },
 
 
 
     {
         "name": "Sword Avo +20",
-        "iconFilename": "swordAvo"
+        "iconFilename": "swordavo"
     },
     {
         "name": "Black Magic Avo +20",
-        "iconFilename": "blackMagicAvo"
+        "iconFilename": "blackmagicavo"
     },
     {
         "name": "White Magic Avo +20",
-        "iconFilename": "whiteMagicAvo"
+        "iconFilename": "whitemagicavo"
     },
 
 
 
     {
         "name": "HP +5",
-        "iconFilename": "hpPlus",
+        "iconFilename": "hpplus",
         "classRequirement": [
             "Noble",
             "Commoner"
@@ -434,35 +434,35 @@
     },
     {
         "name": "Strength +2",
-        "iconFilename": "strengthPlus",
+        "iconFilename": "strengthplus",
         "classRequirement": [
             "Fighter"
         ]
     },
     {
         "name": "Magic +2",
-        "iconFilename": "magicPlus",
+        "iconFilename": "magicplus",
         "classRequirement": [
             "Monk"
         ]
     },
     {
         "name": "Dexterity +4",
-        "iconFilename": "dexterityPlus",
+        "iconFilename": "dexterityplus",
         "skillRequirement": {
             "riding": "c"
         }
     },
     {
         "name": "Speed +2",
-        "iconFilename": "speedPlus",
+        "iconFilename": "speedplus",
         "classRequirement": [
             "Myrmidon"
         ]
     },
     {
         "name": "Pomp & Circumstance",
-        "iconFilename": "pompAndCircumstance",
+        "iconFilename": "pompandcircumstance",
         "classRequirement": [
             "Armored Lord",
             "High Lord",
@@ -471,28 +471,28 @@
     },
     {
         "name": "Defense +2",
-        "iconFilename": "defensePlus",
+        "iconFilename": "defenseplus",
         "classRequirement": [
             "Soldier"
         ]
     },
     {
         "name": "Resistance +2",
-        "iconFilename": "resistancePlus",
+        "iconFilename": "resistanceplus",
         "classRequirement": [
             "Lord"
         ]
     },
     {
         "name": "Movement +1",
-        "iconFilename": "movementPlus",
+        "iconFilename": "movementplus",
         "skillRequirement": {
             "riding": "a+"
         }
     },
     {
         "name": "Hit +20",
-        "iconFilename": "hitPlus",
+        "iconFilename": "hitplus",
         "classRequirement": [
             "Archer"
         ]
@@ -502,49 +502,49 @@
 
     {
         "name": "Defiant Str",
-        "iconFilename": "defiantStrength",
+        "iconFilename": "defiantstrength",
         "classRequirement": [
             "Hero"
         ]
     },
     {
         "name": "Defiant Mag",
-        "iconFilename": "defiantMagic",
+        "iconFilename": "defiantmagic",
         "classRequirement": [
             "Gremory"
         ]
     },
     {
         "name": "Defiant Spd",
-        "iconFilename": "defiantSpeed",
+        "iconFilename": "defiantspeed",
         "classRequirement": [
             "Bow Knight"
         ]
     },
     {
         "name": "Defiant Def",
-        "iconFilename": "defiantDefense",
+        "iconFilename": "defiantdefense",
         "classRequirement": [
             "Great Knight"
         ]
     },
     {
         "name": "Defiant Res",
-        "iconFilename": "defiantResistance",
+        "iconFilename": "defiantresistance",
         "classRequirement": [
             "Holy Knight"
         ]
     },
     {
         "name": "Defiant Avo",
-        "iconFilename": "defiantAvoidance",
+        "iconFilename": "defiantavoidance",
         "classRequirement": [
             "Falcon Knight"
         ]
     },
     {
         "name": "Defiant Crit",
-        "iconFilename": "defiantCrit",
+        "iconFilename": "defiantcrit",
         "classRequirement": [
             "Wyvern Lord"
         ]
@@ -554,35 +554,35 @@
 
     {
         "name": "Death Blow",
-        "iconFilename": "deathBlow",
+        "iconFilename": "deathblow",
         "classRequirement": [
             "Brigand"
         ]
     },
     {
         "name": "Fiendish Blow",
-        "iconFilename": "fiendishBlow",
+        "iconFilename": "fiendishblow",
         "classRequirement": [
             "Mage"
         ]
     },
     {
         "name": "Darting Blow",
-        "iconFilename": "dartingBlow",
+        "iconFilename": "dartingblow",
         "classRequirement": [
             "Pegasus Knight"
         ]
     },
     {
         "name": "Armored Blow",
-        "iconFilename": "armoredBlow",
+        "iconFilename": "armoredblow",
         "classRequirement": [
             "Armored Knight"
         ]
     },
     {
         "name": "Warding Blow",
-        "iconFilename": "wardingBlow",
+        "iconFilename": "wardingblow",
         "classRequirement": [
             "Mortal Savant"
         ]
@@ -592,39 +592,39 @@
 
     {
         "name": "Rally Strength",
-        "iconFilename": "rallyStrength"
+        "iconFilename": "rallystrength"
     },
     {
         "name": "Rally Magic",
-        "iconFilename": "rallyMagic"
+        "iconFilename": "rallymagic"
     },
     {
         "name": "Rally Speed",
-        "iconFilename": "rallySpeed"
+        "iconFilename": "rallyspeed"
     },
     {
         "name": "Rally Defense",
-        "iconFilename": "rallyDefense"
+        "iconFilename": "rallydefense"
     },
     {
         "name": "Rally Resistance",
-        "iconFilename": "rallyResistance"
+        "iconFilename": "rallyresistance"
     },
     {
         "name": "Rally Movement",
-        "iconFilename": "rallyMovement"
+        "iconFilename": "rallymovement"
     },
     {
         "name": "Rally Dexterity",
-        "iconFilename": "rallyDexterity"
+        "iconFilename": "rallydexterity"
     },
     {
         "name": "Rally Luck",
-        "iconFilename": "rallyLuck"
+        "iconFilename": "rallyluck"
     },
     {
         "name": "Rally Charm",
-        "iconFilename": "rallyCharm"
+        "iconFilename": "rallycharm"
     },
 
 
@@ -632,33 +632,33 @@
 
     {
         "name": "Seal Strength",
-        "iconFilename": "sealStrength"
+        "iconFilename": "sealstrength"
     },
     {
         "name": "Seal Magic",
-        "iconFilename": "sealMagic"
+        "iconFilename": "sealmagic"
     },
     {
         "name": "Seal Speed",
-        "iconFilename": "sealSpeed"
+        "iconFilename": "sealspeed"
     },
     {
         "name": "Seal Defense",
-        "iconFilename": "sealDefense",
+        "iconFilename": "sealdefense",
         "classRequirement": [
             "Wyvern Rider"
         ]
     },
     {
         "name": "Seal Resistance",
-        "iconFilename": "sealResistance",
+        "iconFilename": "sealresistance",
         "classRequirement": [
             "Dark Knight"
         ]
     },
     {
         "name": "Seal Movement",
-        "iconFilename": "sealMovement"
+        "iconFilename": "sealmovement"
     },
 
 
@@ -704,20 +704,20 @@
 
     {
         "name": "Model Leader",
-        "iconFilename": "modelLeader"
+        "iconFilename": "modelleader"
     },
 
 
     {
         "name": "Offensive Tactics",
-        "iconFilename": "offensiveTactics",
+        "iconFilename": "offensivetactics",
         "skillRequirement": {
             "authority": "s+"
         }
     },
     {
         "name": "Defensive Tactics",
-        "iconFilename": "defensiveTactics",
+        "iconFilename": "defensivetactics",
         "skillRequirement": {
             "authority": "b"
         }
@@ -733,7 +733,7 @@
     },
     {
         "name": "Poison Strike",
-        "iconFilename": "poisonStrike",
+        "iconFilename": "poisonstrike",
         "classRequirement": [
             "Dark Mage"
         ]
@@ -770,7 +770,7 @@
     },
     {
         "name": "Special Dance",
-        "iconFilename": "specialDance",
+        "iconFilename": "specialdance",
         "classRequirement": [
             "Dancer"
         ]
@@ -789,7 +789,7 @@
     },
     {
         "name": "Quick Riposte",
-        "iconFilename": "quickRiposte",
+        "iconFilename": "quickriposte",
         "classRequirement": [
             "War Master"
         ]
@@ -811,7 +811,7 @@
     },
     {
         "name": "Unarmed Combat",
-        "iconFilename": "unarmedCombat",
+        "iconFilename": "unarmedcombat",
         "classRequirement": [
             "Brawler"
         ]
@@ -821,7 +821,7 @@
 
     {
         "name": "Black Magic Range +1",
-        "iconFilename": "blackMagicRange",
+        "iconFilename": "blackmagicrange",
         "skillRequirement": {
             "reason": "s"
         },
@@ -829,7 +829,7 @@
     },
     {
         "name": "Dark Magic Range +1",
-        "iconFilename": "darkMagicRange",
+        "iconFilename": "darkmagicrange",
         "skillRequirement": {
             "reason": "s"
         },
@@ -837,7 +837,7 @@
     },
     {
         "name": "White Magic Range +1",
-        "iconFilename": "whiteMagicRange",
+        "iconFilename": "whitemagicrange",
         "skillRequirement": {
             "faith": "s"
         }
@@ -847,14 +847,14 @@
 
     {
         "name": "Weight -3",
-        "iconFilename": "weightMinus",
+        "iconFilename": "weightminus",
         "skillRequirement": {
             "heavyArmor": "c"
         }
     },
     {
         "name": "Weight -5",
-        "iconFilename": "weightMinusPlus",
+        "iconFilename": "weightminusplus",
         "skillRequirement": {
             "heavyArmor": "a+"
         }
@@ -864,21 +864,21 @@
 
     {
         "name": "Armored Effect Null",
-        "iconFilename": "armoredEffectNull",
+        "iconFilename": "armoredeffectnull",
         "skillRequirement": {
             "heavyArmor": "s+"
         }
     },
     {
         "name": "Cavalry Effect Null",
-        "iconFilename": "cavalryEffectNull",
+        "iconFilename": "cavalryeffectnull",
         "skillRequirement": {
             "riding": "s+"
         }
     },
     {
         "name": "Flying Effect Null",
-        "iconFilename": "flyingEffectNull",
+        "iconFilename": "flyingeffectnull",
         "skillRequirement": {
             "flying": "s+"
         }
@@ -888,33 +888,33 @@
 
     {
         "name": "Battalion Desperation",
-        "iconFilename": "battalionDesperation"
+        "iconFilename": "battaliondesperation"
     },
     {
         "name": "Battalion Vantage",
-        "iconFilename": "battalionVantage"
+        "iconFilename": "battalionvantage"
     },
     {
         "name": "Battalion Wrath",
-        "iconFilename": "battalionWrath"
+        "iconFilename": "battalionwrath"
     },
     {
         "name": "Battalion Renewal",
-        "iconFilename": "battalionRenewal"
+        "iconFilename": "battalionrenewal"
     },
 
 
 
     {
         "name": "Alert Stance",
-        "iconFilename": "alertStance",
+        "iconFilename": "alertstance",
         "skillRequirement": {
             "flying": "b"
         }
     },
     {
         "name": "Alert Stance+",
-        "iconFilename": "alertStancePlus",
+        "iconFilename": "alertstanceplus",
         "skillRequirement": {
             "flying": "a+"
         }
@@ -924,7 +924,7 @@
 
     {
         "name": "Close Counter",
-        "iconFilename": "closeCounter",
+        "iconFilename": "closecounter",
         "skillRequirement": {
             "bow": "c"
         }
@@ -934,7 +934,7 @@
 
     {
         "name": "Sacred Power",
-        "iconFilename": "sacredPower",
+        "iconFilename": "sacredpower",
         "classRequirement": [
             "Enlightened One"
         ]
