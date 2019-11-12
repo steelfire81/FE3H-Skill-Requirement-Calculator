@@ -1,0 +1,327 @@
+[
+    {
+        "name": "Noble"
+    },
+    {
+        "name": "Commoner"
+    },
+    {
+        "name": "Dancer"
+    },
+
+
+
+
+
+    {
+        "name": "Enlightened One",
+        "special": true
+    },
+    {
+        "name": "Armored Lord",
+        "special": true
+    },
+    {
+        "name": "High Lord",
+        "special": true
+    },
+    {
+        "name": "Wyvern Master",
+        "special": true
+    },
+    {
+        "name": "Emperor",
+        "special": true
+    },
+    {
+        "name": "Great Lord",
+        "special": true
+    },
+    {
+        "name": "Barbarossa",
+        "special": true
+    },
+    {
+        "name": "Death Knight",
+        "special": true
+    },
+
+
+
+
+
+    {
+        "name": "Myrmidon",
+        "skillRequirements": {
+            "sword": "d"
+        }
+    },
+    {
+        "name": "Soldier",
+        "skillRequirements": {
+            "lance": "d"
+        }
+    },
+    {
+        "name": "Fighter",
+        "skillRequirements": {
+            "axe": "d",
+            "bow": "d",
+            "brawling": "d"
+        }
+    },
+    {
+        "name": "Monk",
+        "skillRequirements": {
+            "reason": "d",
+            "faith": "d"
+        }
+    },
+
+
+
+
+
+    {
+        "name": "Lord",
+        "special": true,
+        "skillRequirements": {
+            "sword": "d+",
+            "authority": "c"
+        }
+    },
+    {
+        "name": "Mercenary",
+        "skillRequirements": {
+            "sword": "c"
+        }
+    },
+    {
+        "name": "Thief",
+        "skillRequirements": {
+            "sword": "c"
+        }
+    },
+    {
+        "name": "Armored Knight",
+        "skillRequirements": {
+            "axe": "c",
+            "heavyArmor": "d"
+        }
+    },
+    {
+        "name": "Cavalier",
+        "skillRequirements": {
+            "lance": "c",
+            "riding": "d"
+        }
+    },
+    {
+        "name": "Brigand",
+        "skillRequirements": {
+            "axe": "c"
+        }
+    },
+    {
+        "name": "Archer",
+        "skillRequirements": {
+            "bow": "c"
+        }
+    },
+    {
+        "name": "Brawler",
+        "sexRequirement": "m",
+        "skillRequirements": {
+            "brawling": "c"
+        }
+    },
+    {
+        "name": "Mage",
+        "skillRequirements": {
+            "reason": "c"
+        }
+    },
+    {
+        "name": "Dark Mage",
+        "sexRequirement": "m",
+        "skillRequirements": {
+            "reason": "c"
+        }
+    },
+    {
+        "name": "Priest",
+        "skillRequirements": {
+            "faith": "c"
+        }
+    },
+    {
+        "name": "Pegasus Knight",
+        "sexRequirement": "f",
+        "skillRequirements": {
+            "lance": "c",
+            "flying": "d"
+        }
+    },
+
+
+
+
+
+    {
+        "name": "Hero",
+        "sexRequirement": "m",
+        "skillRequirements": {
+            "sword": "b",
+            "axe": "c"
+        }
+    },
+    {
+        "name": "Swordmaster",
+        "skillRequirements": {
+            "sword": "a"
+        }
+    },
+    {
+        "name": "Assassin",
+        "skillRequirements": {
+            "sword": "b",
+            "bow": "c"
+        }
+    },
+    {
+        "name": "Fortress Knight",
+        "skillRequirements": {
+            "axe": "b",
+            "heavyArmor": "b"
+        }
+    },
+    {
+        "name": "Paladin",
+        "skillRequirements": {
+            "lance": "b",
+            "riding": "b"
+        }
+    },
+    {
+        "name": "Wyvern Rider",
+        "skillRequirements": {
+            "axe": "b",
+            "flying": "c"
+        }
+    },
+    {
+        "name": "Warrior",
+        "skillRequirements": {
+            "axe": "a"
+        }
+    },
+    {
+        "name": "Sniper",
+        "skillRequirements": {
+            "bow": "a"
+        }
+    },
+    {
+        "name": "Grappler",
+        "sexRequirement": "m",
+        "skillRequirements": {
+            "brawling": "a"
+        }
+    },
+    {
+        "name": "Warlock",
+        "skillRequirements": {
+            "reason": "a"
+        }
+    },
+    {
+        "name": "Dark Bishop",
+        "sexRequirement": "m",
+        "skillRequirements": {
+            "reason": "a"
+        }
+    },
+    {
+        "name": "Bishop",
+        "skillRequirements": {
+            "faith": "a"
+        }
+    },
+
+
+
+
+
+    {
+        "name": "Falcon Knight",
+        "sexRequirement": "f",
+        "skillRequirements": {
+            "sword": "c",
+            "lance": "a",
+            "flying": "b+"
+        }
+    },
+    {
+        "name": "Wyvern Lord",
+        "skillRequirements": {
+            "lance": "c",
+            "axe": "a",
+            "flying": "a"
+        }
+    },
+    {
+        "name": "Mortal Savant",
+        "skillRequirements": {
+            "sword": "a",
+            "reason": "b+"
+        }
+    },
+    {
+        "name": "Great Knight",
+        "skillRequirements": {
+            "axe": "b+",
+            "heavyArmor": "a",
+            "riding": "b"
+        }
+    },
+    {
+        "name": "Bow Knight",
+        "skillRequirements": {
+            "lance": "c",
+            "bow": "a",
+            "riding": "a"
+        }
+    },
+    {
+        "name": "Dark Knight",
+        "skillRequirements": {
+            "lance": "c",
+            "reason": "b+",
+            "riding": "a"
+        }
+    },
+    {
+        "name": "Holy Knight",
+        "skillRequirements": {
+            "lance": "c",
+            "faith": "b+",
+            "riding": "a"
+        }
+    },
+    {
+        "name": "War Master",
+        "sexRequirement": "m",
+        "skillRequirements": {
+            "axe": "a",
+            "brawling": "a"
+        }
+    },
+    {
+        "name": "Gremory",
+        "sexRequirement": "f",
+        "skillRequirements": {
+            "reason": "a",
+            "faith": "a"
+        }
+    }
+]

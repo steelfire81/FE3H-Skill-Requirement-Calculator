@@ -1,0 +1,951 @@
+[
+    {
+        "name": "Sword Prowess Lv 1",
+        "iconFilename": "swordProwess1",
+        "skillRequirement": {
+            "sword": "e+"
+        }
+    },
+    {
+        "name": "Sword Prowess Lv 2",
+        "iconFilename": "swordProwess2",
+        "skillRequirement": {
+            "sword": "d+"
+        }
+    },
+    {
+        "name": "Sword Prowess Lv 3",
+        "iconFilename": "swordProwess3",
+        "skillRequirement": {
+            "sword": "c+"
+        }
+    },
+    {
+        "name": "Sword Prowess Lv 4",
+        "iconFilename": "swordProwess4",
+        "skillRequirement": {
+            "sword": "b+"
+        }
+    },
+    {
+        "name": "Sword Prowess Lv 5",
+        "iconFilename": "swordProwess5",
+        "skillRequirement": {
+            "sword": "a+"
+        }
+    },
+
+
+
+    {
+        "name": "Lance Prowess Lv 1",
+        "iconFilename": "lanceProwess1",
+        "skillRequirement": {
+            "lance": "e+"
+        }
+    },
+    {
+        "name": "Lance Prowess Lv 2",
+        "iconFilename": "lanceProwess2",
+        "skillRequirement": {
+            "lance": "d+"
+        }
+    },
+    {
+        "name": "Lance Prowess Lv 3",
+        "iconFilename": "lanceProwess3",
+        "skillRequirement": {
+            "lance": "c+"
+        }
+    },
+    {
+        "name": "Lance Prowess Lv 4",
+        "iconFilename": "lanceProwess4",
+        "skillRequirement": {
+            "lance": "b+"
+        }
+    },
+    {
+        "name": "Lance Prowess Lv 5",
+        "iconFilename": "lanceProwess5",
+        "skillRequirement": {
+            "lance": "a+"
+        }
+    },
+
+
+
+    {
+        "name": "Axe Prowess Lv 1",
+        "iconFilename": "axeProwess1",
+        "skillRequirement": {
+            "axe": "e+"
+        }
+    },
+    {
+        "name": "Axe Prowess Lv 2",
+        "iconFilename": "axeProwess2",
+        "skillRequirement": {
+            "axe": "d+"
+        }
+    },
+    {
+        "name": "Axe Prowess Lv 3",
+        "iconFilename": "axeProwess3",
+        "skillRequirement": {
+            "axe": "c+"
+        }
+    },
+    {
+        "name": "Axe Prowess Lv 4",
+        "iconFilename": "axeProwess4",
+        "skillRequirement": {
+            "axe": "b+"
+        }
+    },
+    {
+        "name": "Axe Prowess Lv 5",
+        "iconFilename": "axeProwess5",
+        "skillRequirement": {
+            "axe": "a+"
+        }
+    },
+
+
+
+    {
+        "name": "Bow Prowess Lv 1",
+        "iconFilename": "bowProwess1",
+        "skillRequirement": {
+            "bow": "e+"
+        }
+    },
+    {
+        "name": "Bow Prowess Lv 2",
+        "iconFilename": "bowProwess2",
+        "skillRequirement": {
+            "bow": "d+"
+        }
+    },
+    {
+        "name": "Bow Prowess Lv 3",
+        "iconFilename": "bowProwess3",
+        "skillRequirement": {
+            "bow": "c+"
+        }
+    },
+    {
+        "name": "Bow Prowess Lv 4",
+        "iconFilename": "bowProwess4",
+        "skillRequirement": {
+            "bow": "b+"
+        }
+    },
+    {
+        "name": "Bow Prowess Lv 5",
+        "iconFilename": "bowProwess5",
+        "skillRequirement": {
+            "bow": "a+"
+        }
+    },
+
+
+
+    {
+        "name": "Brawling Prowess Lv 1",
+        "iconFilename": "brawlProwess1",
+        "skillRequirement": {
+            "brawling": "e+"
+        }
+    },
+    {
+        "name": "Brawling Prowess Lv 2",
+        "iconFilename": "brawlProwess2",
+        "skillRequirement": {
+            "brawling": "d+"
+        }
+    },
+    {
+        "name": "Brawling Prowess Lv 3",
+        "iconFilename": "brawlProwess3",
+        "skillRequirement": {
+            "brawling": "c+"
+        }
+    },
+    {
+        "name": "Brawling Prowess Lv 4",
+        "iconFilename": "brawlProwess4",
+        "skillRequirement": {
+            "brawling": "b+"
+        }
+    },
+    {
+        "name": "Brawling Prowess Lv 5",
+        "iconFilename": "brawlProwess5",
+        "skillRequirement": {
+            "brawling": "a+"
+        }
+    },
+
+
+
+    {
+        "name": "Reason Lv 1",
+        "iconFilename": "reason1",
+        "skillRequirement": {
+            "reason": "e+"
+        }
+    },
+    {
+        "name": "Reason Lv 2",
+        "iconFilename": "reason2",
+        "skillRequirement": {
+            "reason": "d+"
+        }
+    },
+    {
+        "name": "Reason Lv 3",
+        "iconFilename": "reason3",
+        "skillRequirement": {
+            "reason": "c+"
+        }
+    },
+    {
+        "name": "Reason Lv 4",
+        "iconFilename": "reason4",
+        "skillRequirement": {
+            "reason": "b+"
+        }
+    },
+    {
+        "name": "Reason Lv 5",
+        "iconFilename": "reason5",
+        "skillRequirement": {
+            "reason": "a+"
+        }
+    },
+
+
+
+    {
+        "name": "Faith Lv 1",
+        "iconFilename": "faith1",
+        "skillRequirement": {
+            "faith": "e+"
+        }
+    },
+    {
+        "name": "Faith Lv 2",
+        "iconFilename": "faith2",
+        "skillRequirement": {
+            "faith": "d+"
+        }
+    },
+    {
+        "name": "Faith Lv 3",
+        "iconFilename": "faith3",
+        "skillRequirement": {
+            "faith": "c+"
+        }
+    },
+    {
+        "name": "Faith Lv 4",
+        "iconFilename": "faith4",
+        "skillRequirement": {
+            "faith": "b+"
+        }
+    },
+    {
+        "name": "Faith Lv 5",
+        "iconFilename": "faith5",
+        "skillRequirement": {
+            "faith": "a+"
+        }
+    },
+
+
+
+    {
+        "name": "Authority Lv 1",
+        "iconFilename": "authority1",
+        "skillRequirement": {
+            "authority": "e+"
+        }
+    },
+    {
+        "name": "Authority Lv 2",
+        "iconFilename": "authority2",
+        "skillRequirement": {
+            "authority": "d+"
+        }
+    },
+    {
+        "name": "Authority Lv 3",
+        "iconFilename": "authority3",
+        "skillRequirement": {
+            "authority": "c+"
+        }
+    },
+    {
+        "name": "Authority Lv 4",
+        "iconFilename": "authority4",
+        "skillRequirement": {
+            "authority": "b+"
+        }
+    },
+    {
+        "name": "Authority Lv 5",
+        "iconFilename": "authority5",
+        "skillRequirement": {
+            "authority": "a+"
+        }
+    },
+
+
+
+    {
+        "name": "Swordfaire",
+        "skillRequirement": {
+            "sword": "s+"
+        }
+    },
+    {
+        "name": "Lancefaire",
+        "skillRequirement": {
+            "lance": "s+"
+        }
+    },
+    {
+        "name": "Axefaire",
+        "skillRequirement": {
+            "axe": "s+"
+        }
+    },
+    {
+        "name": "Bowfaire",
+        "skillRequirement": {
+            "bow": "s+"
+        }
+    },
+    {
+        "name": "Fistfaire",
+        "skillRequirement": {
+            "brawling": "s+"
+        }
+    },
+    {
+        "name": "Black Tomefaire",
+        "iconFilename": "blackTomefaire",
+        "skillRequirement": {
+            "reason": "s+"
+        },
+        "blackMagic": true
+    },
+    {
+        "name": "White Tomefaire",
+        "iconFilename": "whiteTomefaire",
+        "skillRequirement": {
+            "faith": "s+"
+        }
+    },
+    {
+        "name": "Dark Tomefaire",
+        "iconFilename": "darkTomefaire",
+        "skillRequirement": {
+            "reason": "s+"
+        },
+        "darkMagic": true
+    },
+
+
+
+    {
+        "name": "Sword Crit +10",
+        "iconFilename": "swordCrit",
+        "skillRequirement": {
+            "sword": "s"
+        }
+    },
+    {
+        "name": "Lance Crit +10",
+        "iconFilename": "lanceCrit",
+        "skillRequirement": {
+            "lance": "s"
+        }
+    },
+    {
+        "name": "Axe Crit +10",
+        "iconFilename": "axeCrit",
+        "skillRequirement": {
+            "axe": "s"
+        }
+    },
+    {
+        "name": "Bow Crit +10",
+        "iconFilename": "bowCrit",
+        "skillRequirement": {
+            "bow": "s"
+        }
+    },
+    {
+        "name": "Brawl Crit +10",
+        "iconFilename": "brawlCrit",
+        "skillRequirement": {
+            "brawling": "s"
+        }
+    },
+    {
+        "name": "Black Magic Crit +10",
+        "iconFilename": "blackMagicCrit"
+    },
+    {
+        "name": "White Magic Crit +10",
+        "iconFilename": "whiteMagicCrit"
+    },
+    {
+        "name": "Dark Magic Crit +10",
+        "iconFilename": "darkMagicCrit"
+    },
+
+
+
+    {
+        "name": "Sword Avo +20",
+        "iconFilename": "swordAvo"
+    },
+    {
+        "name": "Black Magic Avo +20",
+        "iconFilename": "blackMagicAvo"
+    },
+    {
+        "name": "White Magic Avo +20",
+        "iconFilename": "whiteMagicAvo"
+    },
+
+
+
+    {
+        "name": "HP +5",
+        "iconFilename": "hpPlus",
+        "classRequirement": [
+            "Noble",
+            "Commoner"
+        ]
+    },
+    {
+        "name": "Strength +2",
+        "iconFilename": "strengthPlus",
+        "classRequirement": [
+            "Fighter"
+        ]
+    },
+    {
+        "name": "Magic +2",
+        "iconFilename": "magicPlus",
+        "classRequirement": [
+            "Monk"
+        ]
+    },
+    {
+        "name": "Dexterity +4",
+        "iconFilename": "dexterityPlus",
+        "skillRequirement": {
+            "riding": "c"
+        }
+    },
+    {
+        "name": "Speed +2",
+        "iconFilename": "speedPlus",
+        "classRequirement": [
+            "Myrmidon"
+        ]
+    },
+    {
+        "name": "Pomp & Circumstance",
+        "iconFilename": "pompAndCircumstance",
+        "classRequirement": [
+            "Armored Lord",
+            "High Lord",
+            "Wyvern Master"
+        ]
+    },
+    {
+        "name": "Defense +2",
+        "iconFilename": "defensePlus",
+        "classRequirement": [
+            "Soldier"
+        ]
+    },
+    {
+        "name": "Resistance +2",
+        "iconFilename": "resistancePlus",
+        "classRequirement": [
+            "Lord"
+        ]
+    },
+    {
+        "name": "Movement +1",
+        "iconFilename": "movementPlus",
+        "skillRequirement": {
+            "riding": "a+"
+        }
+    },
+    {
+        "name": "Hit +20",
+        "iconFilename": "hitPlus",
+        "classRequirement": [
+            "Archer"
+        ]
+    },
+
+
+
+    {
+        "name": "Defiant Str",
+        "iconFilename": "defiantStrength",
+        "classRequirement": [
+            "Hero"
+        ]
+    },
+    {
+        "name": "Defiant Mag",
+        "iconFilename": "defiantMagic",
+        "classRequirement": [
+            "Gremory"
+        ]
+    },
+    {
+        "name": "Defiant Spd",
+        "iconFilename": "defiantSpeed",
+        "classRequirement": [
+            "Bow Knight"
+        ]
+    },
+    {
+        "name": "Defiant Def",
+        "iconFilename": "defiantDefense",
+        "classRequirement": [
+            "Great Knight"
+        ]
+    },
+    {
+        "name": "Defiant Res",
+        "iconFilename": "defiantResistance",
+        "classRequirement": [
+            "Holy Knight"
+        ]
+    },
+    {
+        "name": "Defiant Avo",
+        "iconFilename": "defiantAvoidance",
+        "classRequirement": [
+            "Falcon Knight"
+        ]
+    },
+    {
+        "name": "Defiant Crit",
+        "iconFilename": "defiantCrit",
+        "classRequirement": [
+            "Wyvern Lord"
+        ]
+    },
+
+
+
+    {
+        "name": "Death Blow",
+        "iconFilename": "deathBlow",
+        "classRequirement": [
+            "Brigand"
+        ]
+    },
+    {
+        "name": "Fiendish Blow",
+        "iconFilename": "fiendishBlow",
+        "classRequirement": [
+            "Mage"
+        ]
+    },
+    {
+        "name": "Darting Blow",
+        "iconFilename": "dartingBlow",
+        "classRequirement": [
+            "Pegasus Knight"
+        ]
+    },
+    {
+        "name": "Armored Blow",
+        "iconFilename": "armoredBlow",
+        "classRequirement": [
+            "Armored Knight"
+        ]
+    },
+    {
+        "name": "Warding Blow",
+        "iconFilename": "wardingBlow",
+        "classRequirement": [
+            "Mortal Savant"
+        ]
+    },
+
+
+
+    {
+        "name": "Rally Strength",
+        "iconFilename": "rallyStrength"
+    },
+    {
+        "name": "Rally Magic",
+        "iconFilename": "rallyMagic"
+    },
+    {
+        "name": "Rally Speed",
+        "iconFilename": "rallySpeed"
+    },
+    {
+        "name": "Rally Defense",
+        "iconFilename": "rallyDefense"
+    },
+    {
+        "name": "Rally Resistance",
+        "iconFilename": "rallyResistance"
+    },
+    {
+        "name": "Rally Movement",
+        "iconFilename": "rallyMovement"
+    },
+    {
+        "name": "Rally Dexterity",
+        "iconFilename": "rallyDexterity"
+    },
+    {
+        "name": "Rally Luck",
+        "iconFilename": "rallyLuck"
+    },
+    {
+        "name": "Rally Charm",
+        "iconFilename": "rallyCharm"
+    },
+
+
+
+
+    {
+        "name": "Seal Strength",
+        "iconFilename": "sealStrength"
+    },
+    {
+        "name": "Seal Magic",
+        "iconFilename": "sealMagic"
+    },
+    {
+        "name": "Seal Speed",
+        "iconFilename": "sealSpeed"
+    },
+    {
+        "name": "Seal Defense",
+        "iconFilename": "sealDefense",
+        "classRequirement": [
+            "Wyvern Rider"
+        ]
+    },
+    {
+        "name": "Seal Resistance",
+        "iconFilename": "sealResistance",
+        "classRequirement": [
+            "Dark Knight"
+        ]
+    },
+    {
+        "name": "Seal Movement",
+        "iconFilename": "sealMovement"
+    },
+
+
+
+    {
+        "name": "Swordbreaker",
+        "skillRequirement": {
+            "lance": "b"
+        }
+    },
+    {
+        "name": "Lancebreaker",
+        "skillRequirement": {
+            "axe": "b"
+        }
+    },
+    {
+        "name": "Axebreaker",
+        "skillRequirement": {
+            "sword": "b"
+        }
+    },
+    {
+        "name": "Bowbreaker",
+        "skillRequirement": {
+            "reason": "b"
+        }
+    },
+    {
+        "name": "Fistbreaker",
+        "skillRequirement": {
+            "bow": "b"
+        }
+    },
+    {
+        "name": "Tomebreaker",
+        "skillRequirement": {
+            "brawling": "b"
+        }
+    },
+
+
+
+    {
+        "name": "Model Leader",
+        "iconFilename": "modelLeader"
+    },
+
+
+    {
+        "name": "Offensive Tactics",
+        "iconFilename": "offensiveTactics",
+        "skillRequirement": {
+            "authority": "s+"
+        }
+    },
+    {
+        "name": "Defensive Tactics",
+        "iconFilename": "defensiveTactics",
+        "skillRequirement": {
+            "authority": "b"
+        }
+    },
+
+
+
+    {
+        "name": "Renewal",
+        "classRequirement": [
+            "Bishop"
+        ]
+    },
+    {
+        "name": "Poison Strike",
+        "iconFilename": "poisonStrike",
+        "classRequirement": [
+            "Dark Mage"
+        ]
+    },
+    {
+        "name": "Lifetaker",
+        "classRequirement": [
+            "Dark Bishop"
+        ]
+    },
+    {
+        "name": "Lethality",
+        "classRequirement": [
+            "Assassin"
+        ]
+    },
+    {
+        "name": "Pavise",
+        "classRequirement": [
+            "Fortress Knight"
+        ]
+    },
+    {
+        "name": "Aegis",
+        "classRequirement": [
+            "Paladin"
+        ]
+    },
+    {
+        "name": "Miracle",
+        "classRequirement": [
+            "Priest"
+        ]
+    },
+    {
+        "name": "Special Dance",
+        "iconFilename": "specialDance",
+        "classRequirement": [
+            "Dancer"
+        ]
+    },
+    {
+        "name": "Vantage",
+        "classRequirement": [
+            "Mercenary"
+        ]
+    },
+    {
+        "name": "Desperation",
+        "classRequirement": [
+            "Cavalier"
+        ]
+    },
+    {
+        "name": "Quick Riposte",
+        "iconFilename": "quickRiposte",
+        "classRequirement": [
+            "War Master"
+        ]
+    },
+    {
+        "name": "Wrath",
+        "classRequirement": [
+            "Warrior"
+        ]
+    },
+    {
+        "name": "Steal",
+        "classRequirement": [
+            "Thief"
+        ]
+    },
+    {
+        "name": "Pass"
+    },
+    {
+        "name": "Unarmed Combat",
+        "iconFilename": "unarmedCombat",
+        "classRequirement": [
+            "Brawler"
+        ]
+    },
+
+
+
+    {
+        "name": "Black Magic Range +1",
+        "iconFilename": "blackMagicRange",
+        "skillRequirement": {
+            "reason": "s"
+        },
+        "blackMagic": true
+    },
+    {
+        "name": "Dark Magic Range +1",
+        "iconFilename": "darkMagicRange",
+        "skillRequirement": {
+            "reason": "s"
+        },
+        "darkMagic": true
+    },
+    {
+        "name": "White Magic Range +1",
+        "iconFilename": "whiteMagicRange",
+        "skillRequirement": {
+            "faith": "s"
+        }
+    },
+
+
+
+    {
+        "name": "Weight -3",
+        "iconFilename": "weightMinus",
+        "skillRequirement": {
+            "heavyArmor": "c"
+        }
+    },
+    {
+        "name": "Weight -5",
+        "iconFilename": "weightMinusPlus",
+        "skillRequirement": {
+            "heavyArmor": "a+"
+        }
+    },
+
+
+
+    {
+        "name": "Armored Effect Null",
+        "iconFilename": "armoredEffectNull",
+        "skillRequirement": {
+            "heavyArmor": "s+"
+        }
+    },
+    {
+        "name": "Cavalry Effect Null",
+        "iconFilename": "cavalryEffectNull",
+        "skillRequirement": {
+            "riding": "s+"
+        }
+    },
+    {
+        "name": "Flying Effect Null",
+        "iconFilename": "flyingEffectNull",
+        "skillRequirement": {
+            "flying": "s+"
+        }
+    },
+
+
+
+    {
+        "name": "Battalion Desperation",
+        "iconFilename": "battalionDesperation"
+    },
+    {
+        "name": "Battalion Vantage",
+        "iconFilename": "battalionVantage"
+    },
+    {
+        "name": "Battalion Wrath",
+        "iconFilename": "battalionWrath"
+    },
+    {
+        "name": "Battalion Renewal",
+        "iconFilename": "battalionRenewal"
+    },
+
+
+
+    {
+        "name": "Alert Stance",
+        "iconFilename": "alertStance",
+        "skillRequirement": {
+            "flying": "b"
+        }
+    },
+    {
+        "name": "Alert Stance+",
+        "iconFilename": "alertStancePlus",
+        "skillRequirement": {
+            "flying": "a+"
+        }
+    },
+
+
+
+    {
+        "name": "Close Counter",
+        "iconFilename": "closeCounter",
+        "skillRequirement": {
+            "bow": "c"
+        }
+    },
+
+
+
+    {
+        "name": "Sacred Power",
+        "iconFilename": "sacredPower",
+        "classRequirement": [
+            "Enlightened One"
+        ]
+    },
+
+
+
+    {
+        "name": "Counterattack",
+        "classRequirement": [
+            "Death Knight"
+        ]
+    }
+]

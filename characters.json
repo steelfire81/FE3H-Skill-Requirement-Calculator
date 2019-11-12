@@ -1,0 +1,220 @@
+[
+    {
+        "name": "Byleth (Male)",
+        "sex": "m",
+        "portraitFilename": "bylethm",
+        "specialClasses": [
+            "Enlightened One"
+        ]
+    },
+    {
+        "name": "Byleth (Female)",
+        "sex": "f",
+        "portraitFilename": "bylethf",
+        "specialClasses": [
+            "Enlightened One"
+        ]
+    },
+
+
+
+
+
+    {
+        "name": "Edelgard",
+        "sex": "f",
+        "specialClasses": [
+            "Lord",
+            "Emperor",
+            "Armored Lord"
+        ],
+        "buddingTalentName": "Black Magic Crit +10",
+        "darkMagicUser": true
+    },
+    {
+        "name": "Dimitri",
+        "sex": "m",
+        "specialClasses": [
+            "Lord",
+            "Great Lord",
+            "High Lord"
+        ],
+        "buddingTalentName": "Seal Defense"
+    },
+    {
+        "name": "Claude",
+        "sex": "m",
+        "specialClasses": [
+            "Lord",
+            "Barbarossa",
+            "Wyvern Master"
+        ]
+    },
+
+
+
+
+
+    {
+        "name": "Hubert",
+        "sex": "m",
+        "darkMagicUser": true
+    },
+    {
+        "name": "Ferdinand",
+        "sex": "m",
+        "buddingTalentName": "Seal Speed"
+    },
+    {
+        "name": "Linhardt",
+        "sex": "m"
+    },
+    {
+        "name": "Caspar",
+        "sex": "m"
+    },
+    {
+        "name": "Bernadetta",
+        "sex": "f",
+        "buddingTalentName": "Pass"
+    },
+    {
+        "name": "Dorothea",
+        "sex": "f",
+        "buddingTalentName": "White Magic Avo +20"
+    },
+    {
+        "name": "Petra",
+        "sex": "f"
+    },
+
+
+
+
+
+    {
+        "name": "Dedue",
+        "sex": "m"
+    },
+    {
+        "name": "Felix",
+        "sex": "m",
+        "buddingTalentName": "Black Magic Crit +10"
+    },
+    {
+        "name": "Ashe",
+        "sex": "m"
+    },
+    {
+        "name": "Sylvain",
+        "sex": "m",
+        "buddingTalentName": "Black Magic Avo +20"
+    },
+    {
+        "name": "Mercedes",
+        "sex": "f"
+    },
+    {
+        "name": "Annette",
+        "sex": "f"
+    },
+    {
+        "name": "Ingrid",
+        "sex": "f"
+    },
+
+
+
+
+
+    {
+        "name": "Lorenz",
+        "sex": "m"
+    },
+    {
+        "name": "Raphael",
+        "sex": "m"
+    },
+    {
+        "name": "Ignatz",
+        "sex": "m",
+        "buddingTalentName": "Seal Strength"
+    },
+    {
+        "name": "Lysithea",
+        "sex": "f",
+        "darkMagicUser": true
+    },
+    {
+        "name": "Marianne",
+        "sex": "f"
+    },
+    {
+        "name": "Hilda",
+        "sex": "f"
+    },
+    {
+        "name": "Leonie",
+        "sex": "f"
+    },
+
+
+
+
+
+    {
+        "name": "Seteth",
+        "sex": "m"
+    },
+    {
+        "name": "Flayn",
+        "sex": "f",
+        "buddingTalentName": "Seal Magic"
+    },
+    {
+        "name": "Hanneman",
+        "sex": "m"
+    },
+    {
+        "name": "Manuela",
+        "sex": "f"
+    },
+    {
+        "name": "Gilbert",
+        "sex": "m"
+    },
+    {
+        "name": "Alois",
+        "sex": "m"
+    },
+    {
+        "name": "Catherine",
+        "sex": "f"
+    },
+    {
+        "name": "Shamir",
+        "sex": "f"
+    },
+    {
+        "name": "Cyril",
+        "sex": "m"
+    },
+
+
+
+
+
+    {
+        "name": "Anna",
+        "sex": "f",
+        "buddingTalentName": "Pass"
+    },
+    {
+        "name": "Jeritza",
+        "sex": "m",
+        "specialClasses": [
+            "Death Knight"
+        ],
+        "buddingTalentName": "Darting Blow"
+    }
+]
