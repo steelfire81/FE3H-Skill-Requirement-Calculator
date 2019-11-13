@@ -411,7 +411,10 @@
 
     {
         "name": "Sword Avo +20",
-        "iconFilename": "swordavo"
+        "iconFilename": "swordavo",
+        "classRequirement": [
+            "Dancer"
+        ]
     },
     {
         "name": "Black Magic Avo +20",

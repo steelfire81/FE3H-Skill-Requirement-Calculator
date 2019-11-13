@@ -34,11 +34,11 @@ const NO_ABILITY = "-----";
 // may not be in order as original JSON array.
 var characters;
 
-// Array of class data.
+// Table of class data.
 var classes;
 
-// Array of ability data.
-var abilities;
+// Table of ability data.
+var allAbilities;
 
 
 /* FUNCTIONS */
@@ -97,9 +97,9 @@ function setClasses(classData)
     classes = classData;
 }
 
-function setAbilities(abilityData)
+function setAllAbilities(abilityData)
 {
-    abilities = abilityData;
+    allAbilities = abilityData;
 }
 
 // Update ability selectors
@@ -111,15 +111,6 @@ function updateAbilitySelectors(abilityNames)
     {
         document.getElementById("abilitySelector" + i).innerHTML = content;
     }
-}
-
-// Initialize the page
-function webpageLoaded()
-{
-    // Initialize character, class, and ability data
-    loadFromJSON(CHARACTER_FILE, setCharacters, updateCharacterSelector);
-    loadFromJSON(CLASS_FILE, setClasses);
-    loadFromJSON(ABILITY_FILE, setAbilities, updateAbilitySelectors);
 }
 
 // Get the name of the character currently selected
@@ -142,15 +133,75 @@ function updateCharacterPortrait(character)
     document.getElementById("characterPortrait").src = "resources/characterportraits/" + portraitFilename + ".png";
 }
 
-// Change character portrait and character data
-function changedCharacter()
+// Check whether or not the given character can learn the given ability
+function characterCanLearnAbility(character, ability)
 {
-    let name = getSelectedCharacterName();
-    let character = characters[name];
-    updateCharacterName(name);
-    updateCharacterPortrait(character);
-    // TODO: Update allowed skills
-    // TODO: Clear selected skills
+    // Check if skill is a budding talent first (e.g. for Jeritza)
+    if (ability.name === character.buddingTalentName)
+    {
+        return true;
+    }
+
+    // If there are only skill requirements, character can learn ability
+    if (typeof(ability.skillRequirement) !== "undefined")
+    {
+        // EXCEPTION: Dark magic users exclusively learn dark magic skills
+        if (ability.darkMagic)
+        {
+            return character.darkMagicUser;
+        }
+        else if (ability.blackMagic)
+        {
+            return !character.darkMagicUser;
+        }
+
+        return true;
+    }
+
+    // If there are class requirements, character must be able to certify as that class
+    let intersect = false;
+    if (typeof(ability.classRequirement) !== "undefined")
+    {
+        // Find classes the character can certify as
+        let validClasses = ability.classRequirement.filter(function(abilityClass) {
+            let cl = classes[abilityClass];
+
+            // Special classes can only be used by specific units
+            if (cl.special)
+            {
+                return (typeof(character.specialClasses) !== "undefined" && character.specialClasses.includes(abilityClass));
+            }
+            else
+            {
+                // Check if unit is correct sex for class
+                return (typeof(cl.sexRequirement) === "undefined") || (cl.sexRequirement === character.sex);
+            }
+        });
+
+        if (validClasses.length > 0)
+            return true;
+    } 
+
+    // By default, assume character CANNOT learn skill
+    return false;
+}
+
+// Update ability selectors to only display allowed abilities
+function updateAllowedAbilities(character)
+{
+    // Determine abilities character can learn
+    let allowedAbilities = [];
+    allowedAbilities.push(NO_ABILITY); // Special case - no ability selected
+    Object.keys(allAbilities).forEach(function(name) {
+        if (characterCanLearnAbility(character, allAbilities[name]))
+        {
+            allowedAbilities.push(name);
+        }
+    });
+
+    // Alphabetize and update selectors
+    allowedAbilities.sort();
+    updateAbilitySelectors(allowedAbilities);
 }
 
 // Get name of ability selected by specified ability selector
@@ -163,20 +214,29 @@ function getSelectedAbilityName(n)
 // Update specified ability icon image
 function updateAbilityIcon(n, ability)
 {
-    let iconFilename = ability.iconFilename || ability.name.toLowerCase();
+    let iconFilename = "empty";
+
+    if (ability !== null)
+        iconFilename = ability.iconFilename || ability.name.toLowerCase();
+
     document.getElementById("abilityIcon" + n).src = "resources/abilityicons/" + iconFilename + ".png";
 }
 
 // Calculate the minimum skill requirements for an ability
 function getAbilitySkillRequirements(ability)
 {
+    let buddingTalent = characters[getSelectedCharacterName()].buddingTalentName;
+    if (buddingTalent && buddingTalent === ability.name)
+    {
+        return {};
+    }
     if (typeof(ability.skillRequirement) !== 'undefined')
     {
         return ability.skillRequirement;
     }
     else if (typeof(ability.classRequirement) !== 'undefined')
     {
-        // TODO: Calculate minimum requirements among all possible classes
+        // TODO: Calculate minimum requirements among ALL possible classes
         //       Not currently necessary, but maybe in the future
         return classes[ability.classRequirement[0]].skillRequirements;
     }
@@ -208,15 +268,16 @@ function updateSkillRequirements()
         let abilityName = getSelectedAbilityName(i);
         if (abilityName != NO_ABILITY)
         {
-            // TODO: Check if ability is budding talent FIRST (e.g. for Jeritza)
-
-            let abilityRequirements = getAbilitySkillRequirements(abilities[abilityName]);
-            Object.keys(abilityRequirements).forEach(function(key) {
-                if (RANK_VALUES[abilityRequirements[key]] > RANK_VALUES[minimumSkillRequirements[key]])
-                {
-                    minimumSkillRequirements[key] = abilityRequirements[key];
-                }
-            });
+            let abilityRequirements = getAbilitySkillRequirements(allAbilities[abilityName]);
+            if (typeof(abilityRequirements) !== "undefined")
+            {
+                Object.keys(abilityRequirements).forEach(function(skill) {
+                    if (RANK_VALUES[abilityRequirements[skill]] > RANK_VALUES[minimumSkillRequirements[skill]])
+                    {
+                        minimumSkillRequirements[skill] = abilityRequirements[skill];
+                    }
+                });
+            }
         }
     }
 
@@ -234,7 +295,32 @@ function updateSkillRequirements()
 // Change ability icon and update required skill calculations
 function changedAbility(n)
 {
-    let ability = abilities[getSelectedAbilityName(n)];
+    let ability = allAbilities[getSelectedAbilityName(n)];
     updateAbilityIcon(n, ability);
     updateSkillRequirements();
+}
+
+// Change character portrait and character data
+function changedCharacter()
+{
+    let name = getSelectedCharacterName();
+    let character = characters[name];
+    updateCharacterName(name);
+    updateCharacterPortrait(character);
+    updateAllowedAbilities(character);
+    for (let i = 0; i < 5; i++)
+    {
+        // Clear icons
+        updateAbilityIcon(i, null);
+    }
+    updateSkillRequirements();
+}
+
+// Initialize the page
+function webpageLoaded()
+{
+    // Initialize character, class, and ability data
+    loadFromJSON(CHARACTER_FILE, setCharacters, updateCharacterSelector);
+    loadFromJSON(CLASS_FILE, setClasses);
+    loadFromJSON(ABILITY_FILE, setAllAbilities, updateAbilitySelectors);
 }

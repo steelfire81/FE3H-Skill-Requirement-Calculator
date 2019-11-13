@@ -1,0 +1,36 @@
+#abilitytable table{
+    border: 1px solid black;
+}
+
+#abilitytable th{
+    text-align: center;
+}
+
+#abilitytable td{
+    border: 1px solid black;
+}
+
+#abilitytable img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+#skilltable table{
+    border: 1px solid black;
+}
+
+#skilltable td{
+    border: 1px solid black;
+    width: 29px;
+    height: 29px;
+    text-align: center;
+}
+
+#skilltable img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
