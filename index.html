@@ -13,10 +13,18 @@
     
     <div id="menubar">
         <h1>Fire Emblem Three Houses - Skill Requirement Calculator</h1>
+        
         <select id="characterSelector" onchange="changedCharacter()">
-            <option value = "bylethm">Byleth (M)</option>
-            <option value = "bylethf">Byleth (F)</option>
+            <option value="bylethm">Byleth (M)</option>
+            <option value="bylethf">Byleth (F)</option>
         </select>
+
+        <select id="classSelector" onchange="changedClass()">
+            <option value="swordmaster">Swordmaster</option>
+            <option value="bowknight">Bow Knight</option>
+        </select>
+
+        <button type="button" onclick="saveBuild()">Save</button>
     </div>
 
     <div id="characterinfo">

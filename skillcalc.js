@@ -24,8 +24,8 @@ const RANK_VALUES = {
     "s+": 11,
 };
 
-// Placeholder text when no ability is selected
-const NO_ABILITY = "-----";
+// Placeholder text when nothing is selected
+const NO_SELECTION = "-----";
 
 
 /* VARIABLES */
@@ -60,11 +60,8 @@ function loadFromJSON(path, dataCallback, namesCallback)
 
             dataCallback(data);
 
-            if (namesCallback)
-            {
-                names.sort();
-                namesCallback(names);
-            }
+            names.sort();
+            namesCallback(names);
         }
     }
     request.open("GET", path, true);
@@ -81,6 +78,14 @@ function buildSelectorContent(values)
     return content;
 }
 
+// Get the value currently selected by a selector
+function getSelectedValue(selectorName)
+{
+    let selector = document.getElementById(selectorName);
+    return selector.options[selector.selectedIndex].text;
+}
+
+// Set full list of all characters
 function setCharacters(characterData)
 {
     characters = characterData;
@@ -92,11 +97,25 @@ function updateCharacterSelector(characterNames)
     document.getElementById("characterSelector").innerHTML = buildSelectorContent(characterNames);
 }
 
+// Set full list of all classes
 function setClasses(classData)
 {
     classes = classData;
 }
 
+// Update class selector
+function updateClassSelector(classNames)
+{
+    document.getElementById("classSelector").innerHTML = buildSelectorContent(classNames);
+}
+
+// Get the name of the currently selected class
+function getSelectedClassName()
+{
+    return getSelectedValue("classSelector");
+}
+
+// Set full list of all abilities
 function setAllAbilities(abilityData)
 {
     allAbilities = abilityData;
@@ -116,8 +135,7 @@ function updateAbilitySelectors(abilityNames)
 // Get the name of the character currently selected
 function getSelectedCharacterName()
 {
-    let selector = document.getElementById("characterSelector");
-    return selector.options[selector.selectedIndex].text;
+    return getSelectedValue("characterSelector");
 }
 
 // Update currently displayed character name
@@ -131,6 +149,21 @@ function updateCharacterPortrait(character)
 {
     let portraitFilename = character.portraitFilename || character.name.toLowerCase();
     document.getElementById("characterPortrait").src = "resources/characterportraits/" + portraitFilename + ".png";
+}
+
+// Check whether or not the given character can be the given class
+function characterCanBeClass(character, combatClass)
+{
+    // Special classes can only be used by specific units
+    if (combatClass.special)
+    {
+        return (typeof(character.specialClasses) !== "undefined" && character.specialClasses.includes(combatClass.name));
+    }
+    else
+    {
+        // Check if unit is correct sex for class
+        return (typeof(combatClass.sexRequirement) === "undefined") || (combatClass.sexRequirement === character.sex);
+    }
 }
 
 // Check whether or not the given character can learn the given ability
@@ -165,17 +198,7 @@ function characterCanLearnAbility(character, ability)
         // Find classes the character can certify as
         let validClasses = ability.classRequirement.filter(function(abilityClass) {
             let cl = classes[abilityClass];
-
-            // Special classes can only be used by specific units
-            if (cl.special)
-            {
-                return (typeof(character.specialClasses) !== "undefined" && character.specialClasses.includes(abilityClass));
-            }
-            else
-            {
-                // Check if unit is correct sex for class
-                return (typeof(cl.sexRequirement) === "undefined") || (cl.sexRequirement === character.sex);
-            }
+            return characterCanBeClass(character, cl);
         });
 
         if (validClasses.length > 0)
@@ -186,12 +209,29 @@ function characterCanLearnAbility(character, ability)
     return false;
 }
 
+// Update class selector to only display allowed classes
+function updateAllowedClasses(character)
+{
+    let allowedClasses = [];
+    allowedClasses.push(NO_SELECTION); // Special case - no class selected
+    Object.keys(classes).forEach(function(name) {
+        if (characterCanBeClass(character, classes[name]))
+        {
+            allowedClasses.push(name);
+        }
+    });
+
+    // Alphabetize and update selectors
+    allowedClasses.sort();
+    updateClassSelector(allowedClasses);
+}
+
 // Update ability selectors to only display allowed abilities
 function updateAllowedAbilities(character)
 {
     // Determine abilities character can learn
     let allowedAbilities = [];
-    allowedAbilities.push(NO_ABILITY); // Special case - no ability selected
+    allowedAbilities.push(NO_SELECTION); // Special case - no ability selected
     Object.keys(allAbilities).forEach(function(name) {
         if (characterCanLearnAbility(character, allAbilities[name]))
         {
@@ -207,8 +247,7 @@ function updateAllowedAbilities(character)
 // Get name of ability selected by specified ability selector
 function getSelectedAbilityName(n)
 {
-    let selector = document.getElementById("abilitySelector" + n);
-    return selector.options[selector.selectedIndex].text;
+    return getSelectedValue("abilitySelector" + n);
 }
 
 // Update specified ability icon image
@@ -261,12 +300,26 @@ function updateSkillRequirements()
         "flying": "e"
     };
 
+    // Calculate certification requirements for desired class
+    let desiredClassName = getSelectedClassName();
+    if (desiredClassName != NO_SELECTION)
+    {
+        let desiredClass = classes[getSelectedClassName()];
+        if (typeof(desiredClass.skillRequirements) !== "undefined")
+        {
+            let classRequirements = desiredClass.skillRequirements;
+            Object.keys(classRequirements).forEach(function(skill) {
+                minimumSkillRequirements[skill] = classRequirements[skill];
+            });
+        }
+    }
+
     // Calculate minimum requirements among all skills
     let i;
     for (i = 0; i < 5; i++)
     {
         let abilityName = getSelectedAbilityName(i);
-        if (abilityName != NO_ABILITY)
+        if (abilityName != NO_SELECTION)
         {
             let abilityRequirements = getAbilitySkillRequirements(allAbilities[abilityName]);
             if (typeof(abilityRequirements) !== "undefined")
@@ -307,6 +360,7 @@ function changedCharacter()
     let character = characters[name];
     updateCharacterName(name);
     updateCharacterPortrait(character);
+    updateAllowedClasses(character);
     updateAllowedAbilities(character);
     for (let i = 0; i < 5; i++)
     {
@@ -316,11 +370,23 @@ function changedCharacter()
     updateSkillRequirements();
 }
 
+// Change the desired class
+function changedClass()
+{
+    updateSkillRequirements();
+}
+
+// Save the currently displayed build in the saved characters table
+function saveBuild()
+{
+    // TODO: Stub
+}
+
 // Initialize the page
 function webpageLoaded()
 {
     // Initialize character, class, and ability data
     loadFromJSON(CHARACTER_FILE, setCharacters, updateCharacterSelector);
-    loadFromJSON(CLASS_FILE, setClasses);
+    loadFromJSON(CLASS_FILE, setClasses, updateClassSelector);
     loadFromJSON(ABILITY_FILE, setAllAbilities, updateAbilitySelectors);
 }
