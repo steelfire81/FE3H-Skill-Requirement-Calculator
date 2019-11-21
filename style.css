@@ -37,21 +37,21 @@
 
 
 
-#savedcharactertable table{
+#savedbuilds table{
     border: 1px solid black;
 }
 
-#savedcharactertable tr{
+#savedbuilds tr{
     border: 1px solid black;
     height: 30px;
 }
 
-#savedcharactertable th,td{
+#savedbuilds th,td{
     border: 1px solid black;
     text-align: center;
 }
 
-#savedcharactertable img{
+#savedbuilds img{
     height: 25px;
     width: 25px;
     display: inline-block;

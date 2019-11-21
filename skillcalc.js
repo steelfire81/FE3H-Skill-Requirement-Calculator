@@ -27,6 +27,21 @@ const RANK_VALUES = {
 // Placeholder text when nothing is selected
 const NO_SELECTION = "-----";
 
+// List of all skill names
+const SKILL_NAMES = [
+    "sword",
+    "lance",
+    "axe",
+    "bow",
+    "brawling",
+    "reason",
+    "faith",
+    "authority",
+    "heavyArmor",
+    "riding",
+    "flying"
+];
+
 
 /* VARIABLES */
 // Table of character data.  Not an array because
@@ -39,6 +54,9 @@ var classes;
 
 // Table of ability data.
 var allAbilities;
+
+// Array of saved builds
+var savedBuilds;
 
 
 /* FUNCTIONS */
@@ -376,10 +394,86 @@ function changedClass()
     updateSkillRequirements();
 }
 
+// Turn displayed skill requirements into an object
+function getSkillRequirement(skillName)
+{
+    return document.getElementById(skillName + "SkillRank").innerHTML;
+}
+
+// Generate HTML forming a row in the saved builds table
+function formSavedBuildRow(build, rowNumber)
+{
+    let buildRow = "<tr>";
+
+    // Basic info
+    buildRow += `<td>${build.character}</td>`;
+    buildRow += `<td>${build.class}</td>`;
+
+    // Ability icons
+    buildRow += "<td>";
+    build.abilities.forEach(function(abilityName) {
+        if (abilityName !== NO_SELECTION)
+        {
+            let ability = allAbilities[abilityName];
+            let iconFilename = ability.iconFilename || ability.name.toLowerCase();
+            buildRow += `<img src="resources/abilityicons/${iconFilename}.png">`;
+        }
+    });
+    buildRow += "</td>"
+
+    // Skill levels
+    SKILL_NAMES.forEach(function(skillName) {
+        buildRow += `<td>${build.skillRequirements[skillName].toUpperCase()}</td>`;
+    });
+
+    // Delete button
+    buildRow += `<td><button type="button" onclick="deleteBuild(${rowNumber})">Delete</button></td>`;
+
+    buildRow += "</tr>";
+    return buildRow;
+}
+
+// Display the up to date saved builds table
+function updateSavedBuildsTable()
+{
+    let buildTableText = "";
+    let i;
+    for (i = 0; i < savedBuilds.length; i++)
+    {
+        buildTableText += formSavedBuildRow(savedBuilds[i], i);
+    }
+    document.getElementById("savedbuildtable").innerHTML = buildTableText;
+}
+
 // Save the currently displayed build in the saved characters table
 function saveBuild()
 {
-    // TODO: Stub
+    let build = {
+        "character": getSelectedCharacterName(),
+        "class": getSelectedClassName(),
+        "abilities": [
+            getSelectedAbilityName(0),
+            getSelectedAbilityName(1),
+            getSelectedAbilityName(2),
+            getSelectedAbilityName(3),
+            getSelectedAbilityName(4)
+        ],
+        "skillRequirements": { }
+    };
+
+    SKILL_NAMES.forEach(function(skillName) {
+        build.skillRequirements[skillName] = getSkillRequirement(skillName);
+    });
+
+    savedBuilds.push(build);
+    updateSavedBuildsTable();
+}
+
+// Remove the specified build from the saved builds table
+function deleteBuild(buildNumber)
+{
+    savedBuilds.splice(buildNumber, 1);
+    updateSavedBuildsTable();
 }
 
 // Initialize the page
@@ -389,4 +483,6 @@ function webpageLoaded()
     loadFromJSON(CHARACTER_FILE, setCharacters, updateCharacterSelector);
     loadFromJSON(CLASS_FILE, setClasses, updateClassSelector);
     loadFromJSON(ABILITY_FILE, setAllAbilities, updateAbilitySelectors);
+    savedBuilds = [];
+    updateSavedBuildsTable();
 }
